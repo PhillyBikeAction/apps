@@ -1,3 +1,5 @@
+import datetime
+
 from django import forms
 from django.contrib import admin
 
@@ -52,7 +54,7 @@ class AliasAdmin(admin.ModelAdmin):
         return (
             (obj.mailgun_id is not None)
             and (obj.mailgun_updated_at is not None)
-            and (obj.mailgun_updated_at > obj.updated_at)
+            and (obj.mailgun_updated_at > obj.updated_at - datetime.timedelta(seconds=1))
         )
 
     ready.boolean = True

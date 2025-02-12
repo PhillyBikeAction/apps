@@ -374,6 +374,8 @@ DISCORD_CONNECTED_ROLE_ID = env("DISCORD_CONNECTED_ROLE_ID", default=None)
 # Google Maps
 GOOGLE_MAPS_API_KEY = env("GOOGLE_MAPS_API_KEY", default=None)
 
+MAILGUN_API_KEY = env("MAILGUN_API_KEY", default=None)
+
 # django-admin-csvexport
 # https://github.com/thomst/django-admin-csvexport/issues/3
 DATA_UPLOAD_MAX_NUMBER_FIELDS = None

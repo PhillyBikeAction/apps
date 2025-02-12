@@ -1,4 +1,6 @@
-from django.db import models
+from django.db import models, transaction
+
+from aliases.tasks import sync_alias_to_mailgun
 
 
 class Alias(models.Model):
