@@ -6,7 +6,7 @@
 #
 click==8.1.7
     # via uvicorn
-gunicorn==22.0.0
+gunicorn==23.0.0
     # via -r deploy.in
 h11==0.14.0
     # via uvicorn
