@@ -21,6 +21,9 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 
 COPY .ssh /root/.ssh
 COPY . /code/
+
+RUN playwright install chromium --with-deps
+
 RUN \
     DJANGO_SECRET_KEY=deadbeefcafe \
     DATABASE_URL=None \
